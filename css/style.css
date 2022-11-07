@@ -28,7 +28,7 @@
     url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
 }
 
-/* Component */
+/* 제목 및 설명 */
 body {
     background-color: #5B2386;
     color: white;
@@ -55,7 +55,7 @@ main {
     background-position: center;
 }
 
-.title {
+.tit-timelaw .img-tit {
     position: absolute;
     width: 564px;
     top: 50%;
@@ -63,7 +63,7 @@ main {
     transform: translate(-50%, -50%);
 }
 
-.sub-title {
+.sub-tit {
     font-family: 'OTEnjoystoriesBA';
     font-size: 36px;
     margin-bottom: 78px;
@@ -71,24 +71,31 @@ main {
 }
 
 .txt-desc {
-    display: flex;
+    /* display: flex; */
+    position: relative;
+    max-width: 475px;
     height: 85px;
     font-size: 18px;
     line-height: 2em;
     margin-bottom: 132px;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
-.txt-desc strong {
+.txt-desc .tit-desc {
     font-size: 24px; 
     font-family: 'GmarketSansBold';
 }
 
-.quotes {
+.txt-desc .quotes {
     position: absolute;
     padding-top: 13px;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
 }
+/* //제목 및 설명 */
 
+/* 작업 및 훈련시간 폼 */
 .cont-inp {
     font-size: 24px;
     margin-bottom: 147px;
@@ -135,7 +142,9 @@ main {
     right: 20px;
     bottom: -20px;
 }
+/* //작업 및 훈련시간 폼 */
 
+/* 결과 로딩 화면 */
 .loading-wrapper img {
     width: 100px;
     animation: rotate_clock 2s linear infinite;
@@ -188,7 +197,9 @@ main {
     background-color: #FFFFFF;
     margin-right: 0;
 }
+/* //결과 로딩 화면 */
 
+/* 회사 및 저작권 정보 */
 .cont-footer {
     display: flex;
     flex-direction: column;
@@ -203,17 +214,15 @@ main {
 .logo {
     margin-bottom: 20px;
 }
+/* //회사 및 저작권 정보 */
 
-.blind {
+.ir {
     position:absolute;
-    /*요소를 띄워서 주변 레이아웃에 영향을 끼치지 않도록함*/
     width:1px;
     height:1px;
-    /*크기를 0이 아닌 1px로 주어서 스크린리더가 읽을 수 있도록 함*/
-    clip:rect(0 0 0 0);
+    clip-path: inset(0 0 0 0);
     margin:-1px;
     overflow:hidden;
-    /*눈에 보이는 부분을 제거*/
 }
 
 /* modal */
@@ -266,3 +275,4 @@ main {
 .cont-modal.inactive {
     display: none;
 }
+/* //modal */
