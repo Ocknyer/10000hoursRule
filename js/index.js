@@ -9,8 +9,8 @@ const time = document.querySelector('.time');
 const resultJob = document.querySelector('#work');
 const resultTime = document.querySelector('#someday');
 // 결과값 창
-// const loadingSection = document.querySelector('.loading-wrapper');
-// const resultSection = document.querySelector('.result-wrapper');
+const loadingSection = document.querySelector('.loading-wrapper');
+const resultSection = document.querySelector('.result-wrapper');
 
 // input 값 연결
 locationForm.addEventListener('submit', (e) => {
@@ -33,8 +33,8 @@ const loadingTime = () => {
 const loadingTimeout = () => {
    document.querySelector('.loading-wrapper').style.display = "none";
    document.querySelector('.result-wrapper').style.display = "block";
-   // loadingSection.style.display = "none";
-   // resultSection.style.display = "block";
+   loadingSection.style.display = "none";
+   resultSection.style.display = "block";
 };
 
 //modal 창 오픈
