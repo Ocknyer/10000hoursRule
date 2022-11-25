@@ -1,2 +1,2 @@
-1만 시간의 법칙 배포 링크
-https://ocknyer.github.io/10000hoursRule/
+# 1만 시간의 법칙
+구현 url: https://ocknyer.github.io/10000hoursRule/
